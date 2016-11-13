@@ -1,9 +1,10 @@
 #homePanel.panel
-	div
-		h1 Marbles
-		hr
-		
-		#description.hint DRAG AND DROP A MARBLE TO TRANSFER IT
+	div(style="text-align: center")
+		img.className#IdName(width="300px" src="/imgs/logo.png" alt="Image Title")
+	div(style="text-align: center")
+		span(style="font-size: 36px;") Transaction Simulation
+		hr		
+
 		.marblesWrap
 			.legend(style="text-align:right;") #{bag.setup.USER1.substring(0,1).toUpperCase() + bag.setup.USER1.substring(1)}'s
 			ul#user1wrap.sortable &nbsp;
@@ -15,5 +16,5 @@
 			
 		#toolWrap
 			span.fa.fa-trash-o.fa-2x
-			p.hint DRAG HERE TO REMOVE
+			
 			#trashbin.sortable
